@@ -21,6 +21,9 @@ Building TEASER++ requires the following libraries installed:
 4. PCL >= 1.9 (optional)
 5. Boost >= 1.58 (optional)
 
+On Linux
+^^^^^^^^
+
 Run the following script to install all required dependencies:
 
 .. code-block:: sh
@@ -55,6 +58,23 @@ If you want to build MATLAB bindings, you also need:
 2. CMake >= 3.13
 
 TEASER++ uses the Parallel Maximum Clique (`paper <https://arxiv.org/abs/1302.6256>`_, `code <https://github.com/ryanrossi/pmc>`_) for maximum clique calculation. It will be downloaded automatically during CMake configuration. In addition, CMake will also download Google Test and pybind11 if necessary.
+
+On macOS
+^^^^^^^^^^
+
+First, you need to install ``homebrew`` by following instructions `here <https://brew.sh/>`_.
+
+Run the following script to install dependencies:
+
+.. code-block:: sh
+
+   brew install eigen boost
+
+On Windows
+^^^^^^^^^^
+
+Windows installation is not officially supported. However, you can try this repo `here <https://github.com/DrGabor/WinTeaser/>`_, courtesy of Di Wang at Xi'an Jiaotong University.
+In addition, if you encounter errors regarding Eigen on Windows, take a look `here <https://github.com/zhongjingjogy/use-eigen-with-cmake>`_.
 
 Compilation and Installation
 ----------------------------
